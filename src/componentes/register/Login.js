@@ -1,4 +1,4 @@
-const Register = () => {
+const Login = () => {
   return (
     <div className="bg-gray-800  justify-center min-h-screen py-20">
       <div className="mx-auto  flex container-center ">
@@ -7,33 +7,21 @@ const Register = () => {
             className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
             style={{
               backgroundImage:
-                'url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
+                'url("https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600")',
             }}
           >
             <h1 className="text-white text-3xl">Welcome</h1>
             <div>
               <p className="mt-5 mb-20 pb-40 text-white">
-                Bienvenido a App-Todo-List. Crea tu cuenta o ingresa para que
-                puedas ver el listado de  tus tareas
+                Bienvenido a App-Todo-List. Inicia sesion para comenzar a
+                organizar tu lista de tareas.
               </p>
             </div>
           </div>
           <div className="w-full lg:w-1/2 py-16 px-12">
-            <h2 className="text-3xl mb-4">Register</h2>
-            <p className="mb-4"> Favor crea tu cuenta para poder ingresar </p>
+            <h2 className="text-3xl mb-4">Sign in</h2>
+            <p className="mb-4"> Favor ingresa con tus datos </p>
             <form action="#">
-              <div className="grid grid-cols-2 gap-5">
-                <input
-                  type="text"
-                  placeholder="Firstname"
-                  className="border border-gray-200 py-1 px-2 rounded-lg"
-                />
-                <input
-                  type="text"
-                  placeholder="Lastname"
-                  className="border border-gray-200 py-1 px-2 rounded-lg"
-                />
-              </div>
               <div className=" mt-5">
                 <input
                   type="email"
@@ -48,13 +36,7 @@ const Register = () => {
                   className="border border-gray-200 py-1 px-2 rounded-lg w-full"
                 />
               </div>
-              <div className=" mt-5">
-                <input
-                  type="password"
-                  placeholder="Confirm Pasword"
-                  className="border border-gray-200 py-1 px-2 rounded-lg w-full"
-                />
-              </div>
+
               <div className="mt-5">
                 <input type="checkbox" className="border borde-gray-200" />
                 <span>
@@ -72,7 +54,7 @@ const Register = () => {
               </div>
               <div className="mt-10">
                 <button className="active:scale-[.98] actiove:duration-75 transition-all hover:scale-[1.02] ease-in-out w-full  bg-slate-400 rounded-xl h-8 border border-solid border-gray-400 text-center text-white font-bold">
-                  Register Now
+                  Log in
                 </button>
               </div>
             </form>
@@ -83,4 +65,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
