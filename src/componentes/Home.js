@@ -31,7 +31,7 @@ function Home() {
     },
     {
       id: 5,
-      title: "Quierete",
+      title: "Cuidate",
       completed: false,
     }
   ])
