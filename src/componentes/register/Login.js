@@ -1,5 +1,10 @@
+import { Fragment, useState } from "react";
+import RegisterModal from "./Register-modal";
+
 const Login = () => {
+    const [showModal, setShowModal] = useState(false);
   return (
+    <Fragment>
     <div className="bg-gray-800  justify-center min-h-screen py-20">
       <div className="mx-auto  flex container-center ">
         <div className="flex w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
@@ -7,7 +12,7 @@ const Login = () => {
             className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
             style={{
               backgroundImage:
-                'url("https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600")',
+                'url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
             }}
           >
             <h1 className="text-white text-3xl">Welcome</h1>
@@ -36,7 +41,7 @@ const Login = () => {
                   className="border border-gray-200 py-1 px-2 rounded-lg w-full"
                 />
               </div>
-
+             
               <div className="mt-5">
                 <input type="checkbox" className="border borde-gray-200" />
                 <span>
@@ -52,16 +57,25 @@ const Login = () => {
                   </a>
                 </span>
               </div>
+              
               <div className="mt-10">
                 <button className="active:scale-[.98] actiove:duration-75 transition-all hover:scale-[1.02] ease-in-out w-full  bg-slate-400 rounded-xl h-8 border border-solid border-gray-400 text-center text-white font-bold">
                   Log in
                 </button>
+              </div>
+              <div className="mt-10"> 
+                <p className="text-center mb-3">¿Aún no estas registrado?</p>
+                <button onClick={()=> setShowModal(true)} className="active:scale-[.98] actiove:duration-75 transition-all hover:scale-[1.02] ease-in-out w-full  bg-purple-400 rounded-xl h-8 border border-solid border-gray-400 text-center text-white font-bold">
+                    Crear cuenta nueva
+              </button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <RegisterModal isVisible={showModal} onClose={()=> setShowModal(false)} />
+    </Fragment>
   );
 };
 
