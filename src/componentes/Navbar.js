@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    
+
   return (
     <nav className="flex justify-between items-center  mx-auto">
       <div className=" text-white  font-bold md:static absolute  md:min-h-fit min-h-[60vh] left-0 top-[9%]  w-full flex items-center px-5 bg-purple-300 py-2 rounded-sm border-red-100">
@@ -8,7 +10,7 @@ const Navbar = () => {
           <ul className="flex md:flex-row flex-col md:justify-between items-center md:gap-[30vW] gap-8">
             <li>
               <a className="hover:text-gray-500 ml-10" href="#">
-                Profile
+                Objet
               </a>
             </li>
             <li className="hover:text-gray-500">
@@ -18,7 +20,10 @@ const Navbar = () => {
             </li>
             <li>
               <a className="hover:text-gray-500 mr-10" href="#">
-                Calendario
+                <Link to= "profile">
+                Profile
+                </Link>
+                
               </a>
             </li>
           </ul>
