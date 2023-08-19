@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {FaTimes} from "react-icons/fa"
 import {CiMenuFries} from "react-icons/ci"
+import aky from "../imagenes/aky.png"
 
 const Navbar = () => {
    
-  const logo = <img src= "/src/imagenes/aki.png" />
+  
   
   const [click, setClick] = useState(false)
   const handlClick =()=>{
@@ -25,7 +26,9 @@ const Navbar = () => {
   return (
     <div className="bg-white-900 h-10vh flex justify.between z-50 text-gray lg:py-2 px-10 py-5">
       <div className="flex items-center flex-1">
-        <span className="text-3xl fotn-bold">{logo}</span>
+      <img className="img-fluid w-30 h-20"
+      src ={aky}
+      />
       </div>
       <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
         <div className="flex-10">
