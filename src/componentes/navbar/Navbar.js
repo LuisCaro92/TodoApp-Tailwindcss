@@ -5,6 +5,8 @@ import {CiMenuFries} from "react-icons/ci"
 
 const Navbar = () => {
    
+  const logo = <img src= "/src/imagenes/aki.png" />
+  
   const [click, setClick] = useState(false)
   const handlClick =()=>{
     setClick(!click);
@@ -21,9 +23,9 @@ const Navbar = () => {
   </>
 
   return (
-    <div className="bg-white-900 h-10vh flex justify.between z-50 text-gray lg:py-5 px-20 py-4">
+    <div className="bg-white-900 h-10vh flex justify.between z-50 text-gray lg:py-2 px-10 py-5">
       <div className="flex items-center flex-1">
-        <span className="text-3xl fotn-bold">Logo</span>
+        <span className="text-3xl fotn-bold">{logo}</span>
       </div>
       <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
         <div className="flex-10">
