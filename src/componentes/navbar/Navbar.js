@@ -26,9 +26,11 @@ const Navbar = () => {
   return (
     <div className="bg-white-900 h-10vh flex justify.between z-50 text-gray lg:py-2 px-10 py-5">
       <div className="flex items-center flex-1">
+      <Link to="Home">
       <img className="img-fluid w-30 h-20"
       src ={aky}
       />
+      </Link>
       </div>
       <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
         <div className="flex-10">
